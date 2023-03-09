@@ -25,9 +25,20 @@ word.indexOf('Leo')//ищет с начала(выдает цифру)
 word.lastIndexOf('Leo')//ищет с конца
 word.includes('Leo', 3)//проверяет есть ли элемент в массиве ответ в виде тру фолс
 
+let word2 = word.slice(1, 4)//возвращает массив с определенными значениями
+//word.slice(откуда будем брать, до куда брать будем)
+//word.slice(от,до)
+//word.slice => ctrl+x
+let word3 = word.splice(1, 3)
+//word.splice(откуда,сколько)
+//word.splice => ctrl+x
 
-    ,
-    word.pop()//удаление последнего элемента
+word = word.concat(word3)//добавление в конец массива
+let names = ['Sulton', 'Donik', 'Tima',]
+names = names.concat(word)
+console.log(names);
+
+word.pop()//удаление последнего элемента
 word.shift()//удаление первого элнмента
 
 word.push('Bob')//добавление в конец
@@ -49,4 +60,4 @@ console.log(arr3);
 
 
 
-let word10 = ['Bob', 'Jane', "Leo", 'Alex', 'Dick', 'Roma', 'Antony', "Leo"]
+
